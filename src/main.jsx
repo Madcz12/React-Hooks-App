@@ -1,6 +1,7 @@
-//import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+//import { StrictMode } from 'react';
 //import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
 //import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
 //import { Memorize } from './06-memos/Memorize';
@@ -14,11 +15,15 @@ import './index.css';
 //import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 //import { HooksApp } from './HooksApp';
 import './08-useReducer/intro-reducer.js';
-import { TodoApp } from './08-useReducer/TodoApp.jsx';
+//import { TodoApp } from './08-useReducer/TodoApp.jsx';
+import { MainApp } from './09-useContext/MainApp.jsx';
+
 
 
 createRoot(document.getElementById('root')).render(
-  //<StrictMode>
-    <TodoApp />
-  //</StrictMode>,
+  <BrowserRouter>
+    {/* <StrictMode> */}
+      <MainApp />
+    {/* </StrictMode>, */}
+  </BrowserRouter>
 ) 
