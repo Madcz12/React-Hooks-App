@@ -80,9 +80,9 @@ export const useFetch = (url) => {
   
     // mandamos todo el objeto del useState en el return para desestructurarlo donde lo importemos:
   return {
-    data: state.data,
-    isLoading: state.isLoading,
-    hasError: state.hasError,
+    data:       state.data,
+    isLoading:  state.isLoading,
+    hasError:   state.hasError,
   }
 }
 

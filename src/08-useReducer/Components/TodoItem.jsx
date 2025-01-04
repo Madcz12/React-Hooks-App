@@ -6,6 +6,7 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
             // eslint-disable-next-line react/prop-types
             className={`align-self-center ${ (todo.done) && 'text-decoration-line-through' }`}
             onClick={() => onToggleTodo( todo.id )}
+            aria-label="span"
             >
               {todo.description}
             </span>

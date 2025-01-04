@@ -19,7 +19,7 @@ export const Navbar = () => {
 
         <NavLink 
         className={({isActive}) => `nav-link ${isActive ? 'active' : ""}`}
-        to="/about"
+        to="/about" aria-label="nav"
         >
             About
         </NavLink>

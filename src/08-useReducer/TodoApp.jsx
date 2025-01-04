@@ -5,7 +5,7 @@ import { useTodo } from '../hooks/useTodo';
 /* ------------------------------------------------------------------------------- */
 export const TodoApp = () => {
 
-    const {todos, todosCount, pendingTodosCount, handleDeleteTodo, handleNewTodo, handleToggleTodo } = useTodo();
+    const { todos, todosCount, pendingTodosCount, handleDeleteTodo, handleNewTodo, handleToggleTodo } = useTodo();
 
   return (
     <>
